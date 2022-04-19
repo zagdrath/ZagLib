@@ -1,4 +1,4 @@
-# ZagLib
+![(ZagLib Logo)](https://cdn.discordapp.com/attachments/740837678672642120/966073011994251374/zagliblogo.png)
 
 ### Description
 ZagLib is a Java FRC library which includes many different utilities for programming.
