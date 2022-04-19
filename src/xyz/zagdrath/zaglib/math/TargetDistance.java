@@ -4,11 +4,29 @@
 
 package xyz.zagdrath.zaglib.math;
 
+/**
+ * This class provides a method to get the distance from a camera to a target.
+ * 
+ * @author Cody Wellman (zagdrath@member.fsf.org)
+ */
 public class TargetDistance {
 
     private TargetDistance() {
     }
 
+    /**
+     * Gets the distance from the camera to the target.
+     * 
+     * @param cameraAngle  The angle of the camera measured from the face of the
+     *                     camera to vertical position
+     * @param cameraHeight The height of the camera from the ground to the center of
+     *                     the camera
+     * @param targetAngle  The angle of the vertical offset from the camera to the
+     *                     target
+     * @param targetHeight The height of the target from the ground to the center of
+     *                     the target
+     * @return The distance from the camera to the target
+     */
     public static double getTargetDistance(double cameraAngle, double cameraHeight, double targetAngle,
             double targetHeight) {
         double goalAngle = Math.toRadians(cameraAngle + targetAngle);
