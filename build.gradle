@@ -1,7 +1,14 @@
 plugins {
     id "java"
+
+    id "maven-publish"
+
     id "edu.wpi.first.GradleRIO" version "2022.4.1"
 }
+
+
+group = 'xyz.zagdrath'
+version = '0.1.0'
 
 sourceCompatibility = JavaVersion.VERSION_11
 targetCompatibility = JavaVersion.VERSION_11
@@ -47,12 +54,6 @@ deploy {
 
 def deployArtifact = deploy.targets.roborio.artifacts.frcJava
 
-// Set to true to use debug for JNI.
-wpi.java.debugJni = false
-
-// Set this to true to enable desktop support.
-def includeDesktopSupport = false
-
 // Defining my dependencies. In this case, WPILib (+ friends), and vendor libraries.
 // Also defines JUnit 4.
 dependencies {
@@ -75,10 +76,6 @@ dependencies {
 
     testImplementation 'junit:junit:4.13.1'
 }
-
-// Simulation configuration (e.g. environment variables).
-wpi.sim.addGui().defaultEnabled = true
-wpi.sim.addDriverstation()
 
 // Setting up my Jar File. In this case, adding all libraries into the main jar ('fat jar')
 // in order to make them all available at runtime. Also adding the manifest so WPILib
