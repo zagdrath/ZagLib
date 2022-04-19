@@ -8,12 +8,12 @@ In order to use ZagLib you must add the jar to your project.
 
 Step 1, put the jar file in folder (usually called lib or libs) at the root of your project.
 ```
-libs/ZagLib.jar
+libs/ZagLib-0.1.0.jar
 ```
 
 Step 2, add the dependency to your build.gradle file.
 ```
 dependencies {
-    implementation files('libs/ZagLib.jar')
+    implementation files('libs/ZagLib-0.1.0.jar')
 }
 ```
