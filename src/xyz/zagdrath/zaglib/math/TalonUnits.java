@@ -9,11 +9,11 @@ public class TalonUnits {
     private TalonUnits() {
     }
 
-    public static double rpmToTalonTicks(double rpm) {
+    public static double getTalonTicks(double rpm) {
         return rpm * 2048.0 / 600.0;
     }
 
-    public static double talonTicksToRPM(double ticks) {
+    public static double getRPM(double ticks) {
         return ticks / 2048.0 * 600.0;
     }
 
