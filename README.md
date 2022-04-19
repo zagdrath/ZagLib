@@ -1,3 +1,4 @@
 # ZagLib
 ZagLib is a Java FRC library which includes many different utilities for programming.
-[![Java CI](https://github.com/zagdrath/ZagLib/actions/workflows/gradle.yml/badge.svg?event=workflow_run)](https://github.com/zagdrath/ZagLib/actions/workflows/gradle.yml)
+
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/zagdrath/ZagLib/Java%20CI?label=ZagLib%20Build&logo=github)
