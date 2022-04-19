@@ -5,15 +5,13 @@
 package xyz.zagdrath.zaglib.vision;
 
 /**
- * This class provides all of the constants for the limelight as defined in the
- * documentation. Not everything here may be used, but it is here just in case.
+ * This interface provides all of the constants for the limelight as defined in
+ * the documentation. Not everything here may be used, but it is here just in
+ * case.
  * 
  * @author Cody Wellman (zagdrath@member.fsf.org)
  */
-public final class LimelightConstants {
-
-    private LimelightConstants() {
-    }
+public interface LimelightConstants {
 
     public static final double IMAGE_CAPTURE_LATENCY = 11.0;
 

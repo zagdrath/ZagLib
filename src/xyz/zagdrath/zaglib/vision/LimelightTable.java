@@ -49,10 +49,16 @@ public final class LimelightTable {
     // latency.
     public final NetworkTableEntry latency;
 
-    // Length in pixels
+    // Shortest side length of target in pixels
     public final NetworkTableEntry shortestSideLength;
+
+    // Longest side length of target in pixels
     public final NetworkTableEntry longestSideLength;
+
+    // Horizontal side length of the rough bounding box
     public final NetworkTableEntry horizontalSideLength;
+
+    // Vertical side length of the rough bounding box
     public final NetworkTableEntry verticalSideLength;
 
     // Corner coordinates
@@ -62,7 +68,7 @@ public final class LimelightTable {
     // Camera control entries
     public final NetworkTableEntry solve3D;
     public final NetworkTableEntry ledMode;
-    public final NetworkTableEntry camMode;
+    public final NetworkTableEntry cameraMode;
     public final NetworkTableEntry pipeline;
     public final NetworkTableEntry getPipeline;
     public final NetworkTableEntry cameraStream;
@@ -98,7 +104,7 @@ public final class LimelightTable {
 
         solve3D = table.getEntry("camtran");
         ledMode = table.getEntry("ledMode");
-        camMode = table.getEntry("camMode");
+        cameraMode = table.getEntry("camMode");
         pipeline = table.getEntry("pipeline");
         getPipeline = table.getEntry("getpipe");
         cameraStream = table.getEntry("stream");
