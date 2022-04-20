@@ -96,7 +96,7 @@ public class LimelightEnums {
         }
     };
 
-    /** limelight's current pipeline */
+    /** Limelight's current pipeline */
     public enum Pipeline {
         INVALID_PIPELINE(-1),
         PIPELINE_0(0),

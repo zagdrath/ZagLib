@@ -29,9 +29,7 @@ public class TargetDistance {
      */
     public static double getTargetDistance(double cameraAngle, double cameraHeight, double targetAngle,
             double targetHeight) {
-        double goalAngle = Math.toRadians(cameraAngle + targetAngle);
-
-        return (targetHeight - cameraHeight) / Math.tan(goalAngle);
+        return (targetHeight - cameraHeight) / Math.tan(Math.toRadians(cameraAngle + targetAngle));
     }
 
 }
