@@ -8,8 +8,7 @@ plugins {
 
 apply plugin: 'maven-publish'
 
-// group = 'xyz.zagdrath.ZagLib'
-group = "com.github.zagdrath"
+group = 'xyz.zagdrath.ZagLib'
 version = '0.1.0'
 
 sourceCompatibility = JavaVersion.VERSION_11
