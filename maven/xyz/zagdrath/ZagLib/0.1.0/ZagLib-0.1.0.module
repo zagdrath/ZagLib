@@ -1,0 +1,167 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "xyz.zagdrath.ZagLib",
+    "module": "ZagLib",
+    "version": "0.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "ZagLib-0.1.0.jar",
+          "url": "ZagLib-0.1.0.jar",
+          "size": 4942178,
+          "sha512": "a1688b654c4b19fb17a7581dcf449601f1a66bd24c343021dd48b2eb98715ec7917242b752dd485d67b4761b354dd5f35b473e34a468095e92aaa4cb17f816f4",
+          "sha256": "47273c619d0b86d5112d9adb6eefa7bc8535795d353a1320c3bfad856aa98c02",
+          "sha1": "6c13ba4046bfd89971e317e34336f17ac0b352c8",
+          "md5": "e1088018e84a6002822b69d722afc498"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "edu.wpi.first.wpilibj",
+          "module": "wpilibj-java",
+          "version": {
+            "requires": "2022.4.1"
+          }
+        },
+        {
+          "group": "edu.wpi.first.wpimath",
+          "module": "wpimath-java",
+          "version": {
+            "requires": "2022.4.1"
+          }
+        },
+        {
+          "group": "edu.wpi.first.ntcore",
+          "module": "ntcore-java",
+          "version": {
+            "requires": "2022.4.1"
+          }
+        },
+        {
+          "group": "edu.wpi.first.cscore",
+          "module": "cscore-java",
+          "version": {
+            "requires": "2022.4.1"
+          }
+        },
+        {
+          "group": "edu.wpi.first.cameraserver",
+          "module": "cameraserver-java",
+          "version": {
+            "requires": "2022.4.1"
+          }
+        },
+        {
+          "group": "edu.wpi.first.hal",
+          "module": "hal-java",
+          "version": {
+            "requires": "2022.4.1"
+          }
+        },
+        {
+          "group": "edu.wpi.first.wpiutil",
+          "module": "wpiutil-java",
+          "version": {
+            "requires": "2022.4.1"
+          }
+        },
+        {
+          "group": "edu.wpi.first.thirdparty.frc2022.opencv",
+          "module": "opencv-java",
+          "version": {
+            "requires": "4.5.2-1"
+          }
+        },
+        {
+          "group": "org.ejml",
+          "module": "ejml-simple",
+          "version": {
+            "requires": "0.41"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-annotations",
+          "version": {
+            "requires": "2.12.4"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-core",
+          "version": {
+            "requires": "2.12.4"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-databind",
+          "version": {
+            "requires": "2.12.4"
+          }
+        },
+        {
+          "group": "edu.wpi.first.wpilibNewCommands",
+          "module": "wpilibNewCommands-java",
+          "version": {
+            "requires": "2022.4.1"
+          }
+        },
+        {
+          "group": "com.ctre.phoenix",
+          "module": "api-java",
+          "version": {
+            "requires": "5.21.2"
+          }
+        },
+        {
+          "group": "com.ctre.phoenix",
+          "module": "wpiapi-java",
+          "version": {
+            "requires": "5.21.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ZagLib-0.1.0.jar",
+          "url": "ZagLib-0.1.0.jar",
+          "size": 4942178,
+          "sha512": "a1688b654c4b19fb17a7581dcf449601f1a66bd24c343021dd48b2eb98715ec7917242b752dd485d67b4761b354dd5f35b473e34a468095e92aaa4cb17f816f4",
+          "sha256": "47273c619d0b86d5112d9adb6eefa7bc8535795d353a1320c3bfad856aa98c02",
+          "sha1": "6c13ba4046bfd89971e317e34336f17ac0b352c8",
+          "md5": "e1088018e84a6002822b69d722afc498"
+        }
+      ]
+    }
+  ]
+}

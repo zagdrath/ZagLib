@@ -6,6 +6,24 @@ plugins {
     id "edu.wpi.first.GradleRIO" version "2022.4.1"
 }
 
+publishing {
+    repositories {
+        maven {
+            // change to point to your repo, e.g. http://my.org/repo
+            def url = layout.buildDirectory.dir('repos/releases')
+        }
+    }
+
+    publications {
+        maven(MavenPublication) {
+            groupId = 'xyz.zagdrath.ZagLib'
+            artifactId = 'ZagLib'
+            version = '0.1.0'
+
+            from components.java
+        }
+    }
+}
 
 group = 'xyz.zagdrath'
 version = '0.1.0'
