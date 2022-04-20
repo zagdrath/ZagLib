@@ -21,6 +21,8 @@ public class GyroCAN {
      * @param gyro The gyro in which you want to optimize
      */
     public static void setGyroCAN(BasePigeon gyro) {
+        // TODO: Put the correct values in
+        
         gyro.setStatusFramePeriod(PigeonIMU_StatusFrame.CondStatus_11_GyroAccum, 20);
         gyro.setStatusFramePeriod(PigeonIMU_StatusFrame.CondStatus_10_SixDeg_Quat, 20);
         gyro.setStatusFramePeriod(PigeonIMU_StatusFrame.CondStatus_9_SixDeg_YPR, 20);
