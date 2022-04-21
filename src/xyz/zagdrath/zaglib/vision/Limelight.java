@@ -151,7 +151,7 @@ public final class Limelight {
 
     /** @param pipeline Pipeline to set the limelight to */
     public void setPipeline(Pipeline pipeline) {
-        if (!pipeline.equals(Pipeline.INVALID_PIPELINE)) {
+        if (!pipeline.equals(Pipeline.kInvalidPipeline)) {
             limelightTable.pipeline.setNumber(pipeline.getValue());
         }
     }
@@ -162,28 +162,28 @@ public final class Limelight {
         int pipelineID = (int) (pipelineValue + 0.5);
 
         switch (pipelineID) {
-        case 0:
-            return Pipeline.PIPELINE_0;
-        case 1:
-            return Pipeline.PIPELINE_1;
-        case 2:
-            return Pipeline.PIPELINE_2;
-        case 3:
-            return Pipeline.PIPELINE_3;
-        case 4:
-            return Pipeline.PIPELINE_4;
-        case 5:
-            return Pipeline.PIPELINE_5;
-        case 6:
-            return Pipeline.PIPELINE_6;
-        case 7:
-            return Pipeline.PIPELINE_7;
-        case 8:
-            return Pipeline.PIPELINE_8;
-        case 9:
-            return Pipeline.PIPELINE_9;
-        default:
-            return Pipeline.INVALID_PIPELINE;
+            case 0:
+                return Pipeline.kPipeline0;
+            case 1:
+                return Pipeline.kPipeline1;
+            case 2:
+                return Pipeline.kPipeline2;
+            case 3:
+                return Pipeline.kPipeline3;
+            case 4:
+                return Pipeline.kPipeline4;
+            case 5:
+                return Pipeline.kPipeline5;
+            case 6:
+                return Pipeline.kPipeline6;
+            case 7:
+                return Pipeline.kPipeline7;
+            case 8:
+                return Pipeline.kPipeline8;
+            case 9:
+                return Pipeline.kPipeline9;
+            default:
+                return Pipeline.kInvalidPipeline;
         }
     }
 

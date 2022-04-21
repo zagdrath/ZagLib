@@ -5,7 +5,7 @@
 package xyz.zagdrath.zaglib.vision;
 
 /**
- * This class provides all of the enums for the limelight.
+ * This class provides all of the mode enums for the limelight.
  * 
  * @author Cody Wellman (zagdrath@member.fsf.org)
  */
@@ -13,17 +13,10 @@ public class LimelightEnums {
 
     /** Limelight's LED states */
     public enum LEDMode {
-        /* Use mode set in pipeline */
-        PIPELINE(0),
-
-        /* Force LEDs off */
-        FORCE_OFF(1),
-
-        /* Force LEDs to blink */
-        FORCE_BLINK(2),
-
-        /* Force LEDs on */
-        FORCE_ON(3);
+        kPipeline(0),
+        kOff(1),
+        kBlink(2),
+        kOn(3);
 
         private final int value;
 
@@ -38,11 +31,8 @@ public class LimelightEnums {
 
     /** Limelight's operation modes */
     public enum CameraMode {
-        /* Sets to vision mode */
-        VISION(0),
-
-        /* Sets to driver mode */
-        DRIVER(1);
+        kVision(0),
+        kDriver(1);
 
         private final int value;
 
@@ -57,11 +47,8 @@ public class LimelightEnums {
 
     /** Snapshot modes for the limelight */
     public enum SnapshotMode {
-        /* Don't take snapshots */
-        STOP(0),
-
-        /* Take two snapshots per second */
-        TWO_PER_SECOND(1);
+        kReset(0),
+        kOne(1);
 
         private final int value;
 
@@ -76,14 +63,9 @@ public class LimelightEnums {
 
     /** Limelight's streaming modes */
     public enum CameraStream {
-        /* Side-by-side streams */
-        STANDARD(0),
-
-        /* Secondary camera placed in lower-right corner */
-        MAIN(1),
-
-        /* Limelight camera placed in lower-right corner */
-        SECONDARY(2);
+        kStandard(0),
+        kMain(1),
+        kSecondary(2);
 
         private final int value;
 
@@ -98,17 +80,17 @@ public class LimelightEnums {
 
     /** Limelight's current pipeline */
     public enum Pipeline {
-        INVALID_PIPELINE(-1),
-        PIPELINE_0(0),
-        PIPELINE_1(1),
-        PIPELINE_2(2),
-        PIPELINE_3(3),
-        PIPELINE_4(4),
-        PIPELINE_5(5),
-        PIPELINE_6(6),
-        PIPELINE_7(7),
-        PIPELINE_8(8),
-        PIPELINE_9(9);
+        kInvalidPipeline(-1),
+        kPipeline0(0),
+        kPipeline1(1),
+        kPipeline2(2),
+        kPipeline3(3),
+        kPipeline4(4),
+        kPipeline5(5),
+        kPipeline6(6),
+        kPipeline7(7),
+        kPipeline8(8),
+        kPipeline9(9);
 
         private final int value;
 
