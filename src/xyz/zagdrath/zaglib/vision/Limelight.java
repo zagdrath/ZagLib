@@ -84,7 +84,7 @@ public final class Limelight {
 
     /** @return The pipeline’s latency contribution (ms) */
     public double getLatency() {
-        return limelightTable.latency.getDouble(0.0) + LimelightConstants.IMAGE_CAPTURE_LATENCY;
+        return limelightTable.latency.getDouble(0.0) + LimelightConstants.kImageCaptureLatency;
     }
 
     /********************/
