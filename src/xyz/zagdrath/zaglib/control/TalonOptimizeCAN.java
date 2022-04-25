@@ -14,7 +14,7 @@ import com.ctre.phoenix.motorcontrol.StatusFrameEnhanced;
  * 
  * @author Cody Wellman (zagdrath@member.fsf.org)
  */
-public class TalonCAN {
+public class TalonOptimizeCAN {
 
     /**
      * Optimizes all of the CAN frames on a specific Talon motor controller.

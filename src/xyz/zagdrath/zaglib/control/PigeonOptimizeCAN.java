@@ -13,7 +13,7 @@ import com.ctre.phoenix.sensors.PigeonIMU_StatusFrame;
  * 
  * @author Cody Wellman (zagdrath@member.fsf.org)
  */
-public class GyroCAN {
+public class PigeonOptimizeCAN {
 
     /**
      * Optimizes all of the CAN frames on a specific Pigeon gyro.
