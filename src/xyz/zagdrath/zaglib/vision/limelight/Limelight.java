@@ -2,11 +2,11 @@
 /* This work is licensed under the terms of the MIT license */
 /* found in the root directory of this project. */
 
-package xyz.zagdrath.zaglib.vision;
+package xyz.zagdrath.zaglib.vision.limelight;
 
 // ZagLib imports
-import xyz.zagdrath.zaglib.math.Clamp;
-import xyz.zagdrath.zaglib.vision.LimelightEnums.*;
+import xyz.zagdrath.zaglib.math.ZagMath;
+import xyz.zagdrath.zaglib.vision.limelight.LimelightEnums.*;
 
 /**
  * This class provides all of the functionality of the limelight and allows you
@@ -74,7 +74,7 @@ public final class Limelight {
 
     /** @return Target area (0% of image to 100% of image) */
     public double getTargetArea() {
-        return Clamp.clamp(limelightTable.targetArea.getDouble(0.0) / 100.0, 0.0, 1.0);
+        return ZagMath.clamp(limelightTable.targetArea.getDouble(0.0) / 100.0, 0.0, 1.0);
     }
 
     /** @return Skew or rotation (-90 degrees to 0 degrees) */

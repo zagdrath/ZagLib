@@ -5,42 +5,21 @@
 package xyz.zagdrath.zaglib.math;
 
 /**
- * This class provides methods that limit an input between a given range.
+ * This class provides methods to assist in mathematics.
  * 
  * @author Cody Wellman (zagdrath@member.fsf.org)
  */
-public class Clamp {
-
-    private Clamp() {
-    }
+public class ZagMath {
 
     /**
-     * Limits an input between a given range. (doubles)
+     * Limits an input between a given range.
      * 
      * @param value
      * @param min
      * @param max
-     * @return double
+     * @return The limited value
      */
     public static double clamp(double value, double min, double max) {
-        if (value < min) {
-            return min;
-        }
-        if (value > max) {
-            return max;
-        }
-        return value;
-    }
-
-    /**
-     * Limits an input between a given range. (ints)
-     * 
-     * @param value
-     * @param min
-     * @param max
-     * @return int
-     */
-    public static int clamp(int value, int min, int max) {
         if (value < min) {
             return min;
         }
