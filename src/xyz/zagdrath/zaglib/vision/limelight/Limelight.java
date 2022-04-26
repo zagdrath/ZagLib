@@ -15,7 +15,6 @@ import xyz.zagdrath.zaglib.vision.limelight.LimelightEnums.*;
  * @author Cody Wellman (zagdrath@member.fsf.org)
  */
 public final class Limelight {
-
     private final LimelightTable limelightTable;
 
     private static Limelight defaultInstance = null;
@@ -186,5 +185,4 @@ public final class Limelight {
                 return Pipeline.kInvalidPipeline;
         }
     }
-
 }

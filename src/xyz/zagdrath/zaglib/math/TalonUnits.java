@@ -10,8 +10,8 @@ package xyz.zagdrath.zaglib.math;
  * @author Cody Wellman (zagdrath@member.fsf.org)
  */
 public class TalonUnits {
-
     private TalonUnits() {
+        throw new AssertionError("Utility Class");
     }
 
     /**
@@ -33,5 +33,4 @@ public class TalonUnits {
     public static double getRPM(double ticks) {
         return ticks / 2048.0 * 600.0;
     }
-
 }

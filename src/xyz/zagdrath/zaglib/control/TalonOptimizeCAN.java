@@ -15,6 +15,9 @@ import com.ctre.phoenix.motorcontrol.StatusFrameEnhanced;
  * @author Cody Wellman (zagdrath@member.fsf.org)
  */
 public class TalonOptimizeCAN {
+    private TalonOptimizeCAN() {
+        throw new AssertionError("Utility Class");
+    }
 
     /**
      * Optimizes all of the CAN frames on a specific Talon motor controller.
@@ -39,5 +42,4 @@ public class TalonOptimizeCAN {
         motorController.setStatusFramePeriod(StatusFrameEnhanced.Status_1_General, 61);
         motorController.setStatusFramePeriod(StatusFrameEnhanced.Status_Brushless_Current, 43);
     }
-
 }

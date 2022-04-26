@@ -17,7 +17,6 @@ import edu.wpi.first.networktables.NetworkTableInstance;
  * @author Cody Wellman (zagdrath@member.fsf.org)
  */
 public final class LimelightTable {
-
     /**************************/
     /*** Network table info ***/
     /**************************/
@@ -126,5 +125,4 @@ public final class LimelightTable {
     public NetworkTableEntry getEntry(String key) {
         return table.getEntry(key);
     }
-
 }

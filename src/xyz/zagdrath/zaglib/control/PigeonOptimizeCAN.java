@@ -14,6 +14,9 @@ import com.ctre.phoenix.sensors.PigeonIMU_StatusFrame;
  * @author Cody Wellman (zagdrath@member.fsf.org)
  */
 public class PigeonOptimizeCAN {
+    private PigeonOptimizeCAN() {
+        throw new AssertionError("Utility Class");
+    }
 
     /**
      * Optimizes all of the CAN frames on a specific Pigeon gyro.
@@ -22,7 +25,6 @@ public class PigeonOptimizeCAN {
      */
     public static void setGyroCAN(BasePigeon gyro) {
         // TODO: Put the correct values in
-        
         gyro.setStatusFramePeriod(PigeonIMU_StatusFrame.CondStatus_11_GyroAccum, 20);
         gyro.setStatusFramePeriod(PigeonIMU_StatusFrame.CondStatus_10_SixDeg_Quat, 20);
         gyro.setStatusFramePeriod(PigeonIMU_StatusFrame.CondStatus_9_SixDeg_YPR, 20);
@@ -35,5 +37,4 @@ public class PigeonOptimizeCAN {
         gyro.setStatusFramePeriod(PigeonIMU_StatusFrame.BiasedStatus_2_Gyro, 20);
         gyro.setStatusFramePeriod(PigeonIMU_StatusFrame.CondStatus_1_General, 20);
     }
-
 }

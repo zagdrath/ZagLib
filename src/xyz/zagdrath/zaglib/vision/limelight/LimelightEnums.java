@@ -10,6 +10,9 @@ package xyz.zagdrath.zaglib.vision.limelight;
  * @author Cody Wellman (zagdrath@member.fsf.org)
  */
 public class LimelightEnums {
+    private LimelightEnums() {
+        throw new AssertionError("Utility Class");
+    }
 
     /** Limelight's LED states */
     public enum LEDMode {
@@ -102,5 +105,4 @@ public class LimelightEnums {
             return value;
         }
     };
-
 }

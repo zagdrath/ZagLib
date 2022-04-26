@@ -10,23 +10,31 @@ package xyz.zagdrath.zaglib.math;
  * @author Cody Wellman (zagdrath@member.fsf.org)
  */
 public class ZagMath {
-
-    /**
-     * Limits an input between a given range.
-     * 
-     * @param value
-     * @param min
-     * @param max
-     * @return The limited value
-     */
-    public static double clamp(double value, double min, double max) {
-        if (value < min) {
-            return min;
-        }
-        if (value > max) {
-            return max;
-        }
-        return value;
+    private ZagMath() {
+        throw new AssertionError("Utility Class");
     }
 
+    /**
+     * Returns a value clamped between a minimum and a maximum value.
+     * 
+     * @param value Value to clamp
+     * @param min   Minimum value to which to clamp value.
+     * @param max   Maximum value to which to clamp value.
+     * @return The clamped value.
+     */
+    public static int clamp(int value, int min, int max) {
+        return Math.max(min, Math.min(value, max));
+    }
+
+    /**
+     * Returns a value clamped between a minimum and a maximum value.
+     * 
+     * @param value Value to clamp
+     * @param min   Minimum value to which to clamp value.
+     * @param max   Maximum value to which to clamp value.
+     * @return The clamped value.
+     */
+    public static double clamp(double value, double min, double max) {
+        return Math.max(min, Math.min(value, max));
+    }
 }

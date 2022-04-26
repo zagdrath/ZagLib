@@ -12,7 +12,6 @@ package xyz.zagdrath.zaglib.vision.limelight;
  * @author Cody Wellman (zagdrath@member.fsf.org)
  */
 public interface LimelightConstants {
-
     public static final double kImageCaptureLatency = 11.0;
 
     public static final double kMinXAngle = -29.8;
@@ -29,5 +28,4 @@ public interface LimelightConstants {
 
     public static final double kMinSideLength = 0.0;
     public static final double kMaxSideLength = 320.0;
-
 }
